@@ -9,24 +9,21 @@
   text-align: center;
   width: 100%;
   display: block;
-  background: -webkit-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* W3C */
+  background: #333333;
+  color: #fff;
 }
 
 .footer a {
-  color: #fff;
+  /*color: #fff;*/
 }
 
 .banner {
   padding: 40px;
-  background-image: url("/assets/images/bg-pattern.png"),-webkit-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Chrome 10+, Saf5.1+ */
-  background-image: url("/assets/images/bg-pattern.png"),   -moz-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* FF3.6+ */
-  background-image: url("/assets/images/bg-pattern.png"),    -ms-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* IE10 */
-  background-image: url("/assets/images/bg-pattern.png"),     -o-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Opera 11.10+ */
-  background-image: url("/assets/images/bg-pattern.png"),        linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* W3C */
+  background-image: url("/assets/images/cubes.png"), -webkit-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Chrome 10+, Saf5.1+ */
+  background-image: url("/assets/images/cubes.png"),    -moz-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* FF3.6+ */
+  background-image: url("/assets/images/cubes.png"),     -ms-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* IE10 */
+  background-image: url("/assets/images/cubes.png"),      -o-linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* Opera 11.10+ */
+  background-image: url("/assets/images/cubes.png"),         linear-gradient(90deg, #5C258D 10%, #4389A2 90%); /* W3C */
   color: #fff;
   font-size: 60px;
   margin-bottom: 30px;
