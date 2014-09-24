@@ -1,50 +1,54 @@
 <div class="main">
-  <h1>ng-foobar demo</h1>
-  <hr/>
-  <strong>Click any of the buttons below to see ng-foobar in action. To hide the notification simply click on it.</strong>
+  <div class="banner">
+    ng-foobar demo
+  </div>
 
-  <br/>
-  <br/>
+  <div class="container-fluid">
+    <strong>Click any of the buttons below to see ng-foobar in action. To hide the notification simply click on it.</strong>
 
-  <button type="button" ng-click="showMessage('success', 'Success message')">Success</button>
-  <button type="button" ng-click="showMessage('info', 'Info message')">Info</button>
-  <button type="button" ng-click="showMessage('warning', 'Warning message')">Warning</button>
-  <button type="button" ng-click="showMessage('error', 'Error message')">Error</button>
-
-  <br/>
-  <br/>
-
-  <fieldset>
-    <legend>Auto close</legend>
-    <label for="auto-close">Enable</label>
-    <input type="checkbox" id="auto-close" ng-model="autoClose">
-    <label for="display-time" ng-show="autoClose">Display time</label>
-    <input type="number" id="display-time" ng-model="displayTime" ng-show="autoClose">
     <br/>
-    <button type="button" ng-click="setAutoClose()">Set</button>
-  </fieldset>
-
-  <br/>
-  <br/>
-
-  <fieldset>
-    <legend>Set colors</legend>
-    <label for="context-options">Chose a context</label>
-    <input name="context-options" ng-model="colorContext" value="success" type="radio">Success
-    <input name="context-options" ng-model="colorContext" value="info" type="radio">Info
-    <input name="context-options" ng-model="colorContext" value="warning" type="radio">Warning
-    <input name="context-options" ng-model="colorContext" value="error" type="radio">Error
     <br/>
-    <label for="font-color">Font color</label>
-    <input type="color" id="font-color" ng-model="fontColor">
-    <label for="background-color">Background color</label>
-    <input type="color" id="background-color" ng-model="backgroundColor">
-    <label for="border-color">Border color</label>
-    <input type="color" id="border-color" ng-model="borderColor">
+
+    <button type="button" ng-click="showMessage('success', 'Success message')" class="btn btn-success">Success</button>
+    <button type="button" ng-click="showMessage('info', 'Info message')" class="btn btn-info">Info</button>
+    <button type="button" ng-click="showMessage('warning', 'Warning message')" class="btn btn-warning">Warning</button>
+    <button type="button" ng-click="showMessage('error', 'Error message')" class="btn btn-danger">Error</button>
+
     <br/>
-    <button type="button" ng-click="setColors()">Set</button>
-    <button type="button" ng-click="resetColors()">Reset to defaults</button>
-  </fieldset>
+    <br/>
+
+    <fieldset>
+      <legend>Auto close</legend>
+      <label for="auto-close">Enable</label>
+      <input type="checkbox" id="auto-close" ng-model="autoClose">
+      <label for="display-time" ng-show="autoClose">Display time</label>
+      <input type="number" id="display-time" ng-model="displayTime" ng-show="autoClose">
+      <br/>
+      <button type="button" ng-click="setAutoClose()" class="btn btn-default">Submit</button>
+    </fieldset>
+
+    <br/>
+    <br/>
+
+    <fieldset>
+      <legend>Set colors</legend>
+      <label for="context-options">Chose a context</label>
+      <input name="context-options" ng-model="colorContext" value="success" type="radio">Success
+      <input name="context-options" ng-model="colorContext" value="info" type="radio">Info
+      <input name="context-options" ng-model="colorContext" value="warning" type="radio">Warning
+      <input name="context-options" ng-model="colorContext" value="error" type="radio">Error
+      <br/>
+      <label for="font-color">Font color</label>
+      <input type="color" id="font-color" ng-model="fontColor">
+      <label for="background-color">Background color</label>
+      <input type="color" id="background-color" ng-model="backgroundColor">
+      <label for="border-color">Border color</label>
+      <input type="color" id="border-color" ng-model="borderColor">
+      <br/>
+      <button type="button" ng-click="setColors()" class="btn btn-default">Submit</button> or
+      <button type="button" ng-click="resetColors()" class="btn btn-danger">Reset to defaults</button>
+    </fieldset>
+  </div>
 
 </div>
 
