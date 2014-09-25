@@ -1,50 +1,96 @@
+<div class="banner">
+  ng-foobar demo
+</div>
+
 <div class="main">
-  <div class="banner">
-    ng-foobar demo
-  </div>
+  <div class="container">
+    <div class="row">
+      <h4 class="col-sm-12 text-center">Click any of the buttons below to see <strong class="text-info">ng-foobar</strong> in action. To hide the notification simply click on it.</h4>
 
-  <div class="container-fluid">
-    <h4>Click any of the buttons below to see <strong class="text-info">ng-foobar</strong> in action. To hide the notification simply click on it.</h4>
+      <div class="col-sm-12 text-center">
+        <button type="button" ng-click="showMessage('success', 'Success message')" class="btn btn-success">Success</button>
+        <button type="button" ng-click="showMessage('info', 'Info message')" class="btn btn-info">Info</button>
+        <button type="button" ng-click="showMessage('warning', 'Warning message')" class="btn btn-warning">Warning</button>
+        <button type="button" ng-click="showMessage('error', 'Error message')" class="btn btn-danger">Error</button>
+      </div>
 
-    <button type="button" ng-click="showMessage('success', 'Success message')" class="btn btn-success">Success</button>
-    <button type="button" ng-click="showMessage('info', 'Info message')" class="btn btn-info">Info</button>
-    <button type="button" ng-click="showMessage('warning', 'Warning message')" class="btn btn-warning">Warning</button>
-    <button type="button" ng-click="showMessage('error', 'Error message')" class="btn btn-danger">Error</button>
-
-    <br/>
-    <br/>
-
-    <fieldset>
-      <legend>Auto close</legend>
-      <label for="auto-close">Enable</label>
-      <input type="checkbox" id="auto-close" ng-model="autoClose">
-      <label for="display-time" ng-show="autoClose">Display time</label>
-      <input type="number" id="display-time" ng-model="displayTime" ng-show="autoClose">
       <br/>
-      <button type="button" ng-click="setAutoClose()" class="btn btn-default">Submit</button>
-    </fieldset>
-
-    <br/>
-    <br/>
-
-    <fieldset>
-      <legend>Set colors</legend>
-      <label for="context-options">Chose a context</label>
-      <input name="context-options" ng-model="colorContext" value="success" type="radio">Success
-      <input name="context-options" ng-model="colorContext" value="info" type="radio">Info
-      <input name="context-options" ng-model="colorContext" value="warning" type="radio">Warning
-      <input name="context-options" ng-model="colorContext" value="error" type="radio">Error
       <br/>
-      <label for="font-color">Font color</label>
-      <input type="color" id="font-color" ng-model="fontColor">
-      <label for="background-color">Background color</label>
-      <input type="color" id="background-color" ng-model="backgroundColor">
-      <label for="border-color">Border color</label>
-      <input type="color" id="border-color" ng-model="borderColor">
+
+      <div class="col-sm-12">
+        <fieldset>
+          <legend>Auto close</legend>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="auto-close" ng-model="autoClose">Enable
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group" ng-show="autoClose">
+              <label for="display-time" class="col-sm-3 control-label">Display time</label>
+              <div class="col-sm-3">
+                <input type="number" id="display-time" ng-model="displayTime" class="form-control">
+              </div>
+            </div>
+            <button type="button" ng-click="setAutoClose()" class="btn btn-default col-sm-offset-3">Submit</button>
+          </form>
+        </fieldset>
+      </div>
+
       <br/>
-      <button type="button" ng-click="setColors()" class="btn btn-default">Submit</button> or
-      <button type="button" ng-click="resetColors()" class="btn btn-danger">Reset to defaults</button>
-    </fieldset>
+      <br/>
+
+      <div class="col-sm-12">
+        <fieldset>
+          <legend>Set colors</legend>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="context-options" class="col-sm-3 control-label">Choose a context</label>
+              <div class="col-sm-9">
+                <label class="radio-inline">
+                  <input name="context-options" ng-model="colorContext" value="success" type="radio">Success
+                </label>
+                <label class="radio-inline">
+                  <input name="context-options" ng-model="colorContext" value="info" type="radio">Info
+                </label>
+                <label class="radio-inline">
+                  <input name="context-options" ng-model="colorContext" value="warning" type="radio">Warning
+                </label>
+                <label class="radio-inline">
+                  <input name="context-options" ng-model="colorContext" value="error" type="radio">Error
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="font-color" class="col-sm-3 control-label">Font color</label>
+              <div class="col-sm-2">
+                <input type="color" id="font-color" ng-model="fontColor" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="background-color" class="col-sm-3 control-label">Background color</label>
+              <div class="col-sm-2">
+                <input type="color" id="background-color" ng-model="backgroundColor" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="border-color" class="col-sm-3 control-label">Border color</label>
+              <div class="col-sm-2">
+                <input type="color" id="border-color" ng-model="borderColor" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-offset-3">
+              <button type="button" ng-click="setColors()" class="btn btn-default">Submit</button>
+              <button type="button" ng-click="resetColors()" class="btn btn-danger">Reset to defaults</button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+    </div>
   </div>
 
 </div>
