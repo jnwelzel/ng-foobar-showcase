@@ -12,7 +12,7 @@
     "angular-route": ">=1.2.*",
     "font-awesome": ">=4.1.0",
     "lodash": "~2.4.1",
-    "ng-foobar": "~0.0.6",
+    "ng-foobar": "~0.0.9",
     "bootstrap": "~3.2.0"
   },
   "devDependencies": {

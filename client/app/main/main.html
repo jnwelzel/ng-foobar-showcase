@@ -41,9 +41,6 @@
         </fieldset>
       </div>
 
-      <br/>
-      <br/>
-
       <div class="col-sm-12">
         <fieldset>
           <legend>Set colors</legend>
@@ -87,6 +84,21 @@
               <button type="button" ng-click="setColors()" class="btn btn-default">Submit</button>
               <button type="button" ng-click="resetColors()" class="btn btn-danger">Reset to defaults</button>
             </div>
+          </form>
+        </fieldset>
+      </div>
+
+      <div class="col-sm-12">
+        <fieldset>
+          <legend>Set opacity</legend>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="opacity" class="col-sm-3 control-label">Value</label>
+              <div class="col-sm-3">
+                <input type="number" id="opacity" ng-model="opacity" class="form-control" max="1" min="0" step="0.1">
+              </div>
+            </div>
+            <button type="button" ng-click="setOpacity()" class="btn btn-default col-sm-offset-3">Submit</button>
           </form>
         </fieldset>
       </div>

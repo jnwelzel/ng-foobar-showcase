@@ -10,6 +10,8 @@ angular.module('ngFoobarShowcaseApp')
     $scope.backgroundColor = '#DFF0D8';
     $scope.borderColor = '#D6E9C6';
 
+    $scope.opacity = 0.9;
+
     $scope.showMessage = function(context, message) {
       ngFoobar.show(context, message);
     };
@@ -31,6 +33,10 @@ angular.module('ngFoobarShowcaseApp')
       $scope.fontColor = '#3C763D';
       $scope.backgroundColor = '#DFF0D8';
       $scope.borderColor = '#D6E9C6';
+    };
+
+    $scope.setOpacity = function() {
+      ngFoobar.setOpacity($scope.opacity);
     };
 
   }]);
