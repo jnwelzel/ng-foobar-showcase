@@ -12,6 +12,8 @@ angular.module('ngFoobarShowcaseApp')
 
     $scope.opacity = 0.9;
 
+    $scope.currentDate = new Date();
+
     $scope.showMessage = function(context, message) {
       ngFoobar.show(context, message);
     };
