@@ -3,7 +3,7 @@
 angular.module('ngFoobarShowcaseApp')
   .controller('MainCtrl', ['$scope', 'ngFoobar', function ($scope, ngFoobar) {
     $scope.autoClose = false;
-    $scope.displayTime = 3;
+    $scope.displayTime = 3000;
 
     $scope.colorContext = 'success';
     $scope.fontColor = '#3C763D';

@@ -6,12 +6,11 @@ angular.module('ngFoobarShowcaseApp', [
   'ngSanitize',
   'ngRoute',
   'ngFoobar'
-])
-  .config(function ($routeProvider, $locationProvider) {
+]).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
       .otherwise({
         redirectTo: '/'
       });
 
     $locationProvider.html5Mode(true);
-  });
+  }]);
